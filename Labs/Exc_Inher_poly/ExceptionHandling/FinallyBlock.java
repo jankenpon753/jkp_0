@@ -14,7 +14,8 @@ public class FinallyBlock {
                 System.out.println(e);
                 c = a / (b + 2);
                 System.out.println(c);
-            } finally {
+            } finally { // finally after try_catch, this block of code will run regardless of error
+                        // happening or handling
                 System.out.println("error handled or not i'll work as intended :D");
             }
             System.out.println("rest of the code...");

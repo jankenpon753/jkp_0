@@ -10,20 +10,21 @@ public class NestedTryCatch {
             int c = 0;
             int[] arr = new int[10];
             try {
-                c = a / b;
-                try {
+                c = a / b; // outer nest error try block
+                try { // nested inner try block
                     arr[12] = c;
-                } catch (ArrayIndexOutOfBoundsException e) {
+                } catch (ArrayIndexOutOfBoundsException e) { // inner catch
                     System.out.println(e);
                     arr[1] = c;
                     System.out.println(arr[1]);
                 }
-            } catch (ArithmeticException e) {
+            } catch (ArithmeticException e) { // outer catch
                 System.out.println(e);
                 c = a / (b + 2);
                 System.out.println(c);
             }
             System.out.println("rest of the code...");
+            // not in try_catch block of code
         }
 
     }

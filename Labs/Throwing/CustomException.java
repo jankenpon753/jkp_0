@@ -11,9 +11,10 @@ class AgeCheckerException extends Exception { // creating a custom error extendi
 public class CustomException {
     static void Validate(int age) throws AgeCheckerException { // function to use the custom error type
         if (age < 18) {
-            throw new AgeCheckerException("Underage"); // throwing the custom error if the if condition is true
+            throw new AgeCheckerException("Underage, not eligible for voting"); // throwing the custom error if the if
+                                                                                // condition is true
         } else {
-            System.out.println("Person is an adult");
+            System.out.println("Person is an adult, eligible for");
         }
     }
 

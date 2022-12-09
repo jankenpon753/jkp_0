@@ -24,11 +24,11 @@ class MssgPrnt extends Thread { // creating a second thread by extending thread 
     }
 }
 
-class SumPrnt extends Thread {// creating a third thread by extending thread class
+class SumPrnt extends Thread { // creating a third thread by extending thread class
     int sum = 0;
 
     public void run() {
-        for (int i = 0; i < 200; i++) {
+        for (int i = 10; i <= 200; i++) {
             sum += i;
             System.out.println(sum);
         }

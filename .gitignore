@@ -4,3 +4,4 @@
 CP/
 zTests/
 .vscode/
+*.DS_Store

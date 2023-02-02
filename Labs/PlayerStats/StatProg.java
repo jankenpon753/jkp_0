@@ -20,11 +20,12 @@ public class StatProg {
                 input.nextLine();
                 System.out.print("Enter country: ");
                 playerCountry = input.nextLine();
-                footballer[i] = new player(playerName, playerAge, playerCountry); // new object initializatiopn with constructor
+                footballer[i] = new player(playerName, playerAge, playerCountry); // new object initializatiopn with
+                                                                                  // constructor
             }
             System.out.println();
             System.out.print("Add info? (1 = Yes, 0 = No)\n-> ");
-            t=input.nextInt();
+            t = input.nextInt();
             input.nextLine();
             while (t == 1) {
                 System.out.println();
